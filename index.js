@@ -10,7 +10,7 @@ async function main() {
     let input;
 
     try {
-        input = fs.readFileSync('input.txt', 'utf8');
+        input = fs.readFileSync('correcto1.txt', 'utf8');
     } catch (err) {
         input = await leerCadena();
         console.log(input);
