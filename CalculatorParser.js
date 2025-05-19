@@ -1,9 +1,7 @@
-// Generated from c://Users//Mariana//OneDrive - docentes.frm.utn.edu.ar//SSL//2025//ANTLR4//antlr-calculator-project//Calculator.g4 by ANTLR 4.13.2
+// Generated from Calculator.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import CalculatorListener from './CalculatorListener.js';
-import CalculatorVisitor from './CalculatorVisitor.js';
-
 const serializedATN = [4,1,11,45,2,0,7,0,2,1,7,1,2,2,7,2,1,0,4,0,8,8,0,11,
 0,12,0,9,1,1,1,1,3,1,14,8,1,1,1,1,1,1,1,1,1,3,1,20,8,1,1,1,3,1,23,8,1,1,
 2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,32,8,2,1,2,1,2,1,2,1,2,1,2,1,2,5,2,40,8,2,
@@ -342,14 +340,6 @@ class ProgContext extends antlr4.ParserRuleContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitProg(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -401,14 +391,6 @@ class BlankContext extends StatContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitBlank(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -439,14 +421,6 @@ class PrintExprContext extends StatContext {
 	    if(listener instanceof CalculatorListener ) {
 	        listener.exitPrintExpr(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitPrintExpr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -487,14 +461,6 @@ class AssignContext extends StatContext {
 	    if(listener instanceof CalculatorListener ) {
 	        listener.exitAssign(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitAssign(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -556,14 +522,6 @@ class ParensContext extends ExprContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitParens(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -606,14 +564,6 @@ class MulDivContext extends ExprContext {
 	    if(listener instanceof CalculatorListener ) {
 	        listener.exitMulDiv(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitMulDiv(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 
@@ -660,14 +610,6 @@ class AddSubContext extends ExprContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitAddSub(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -696,14 +638,6 @@ class IdContext extends ExprContext {
 		}
 	}
 
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitId(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
 
 }
 
@@ -730,14 +664,6 @@ class IntContext extends ExprContext {
 	    if(listener instanceof CalculatorListener ) {
 	        listener.exitInt(this);
 		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof CalculatorVisitor ) {
-	        return visitor.visitInt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
 	}
 
 

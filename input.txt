@@ -1,8 +1,4 @@
-x = 2 + 3
-y = 3
-z = x + y
-z
-
-
-
-
+for( dsjkhadk i=10;i<20;i++){
+printf("a");
+break;
+}
